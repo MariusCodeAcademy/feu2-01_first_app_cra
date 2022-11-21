@@ -29,6 +29,21 @@ body {
   gap: 1rem;
 }
 
+.teamItem {
+  display: flex;
+  flex-direction: column;
+}
+.team__title,
+.team__ocupation {
+  margin: 0.7em 0;
+}
+
+.team__ocupation {
+  color: darkgray;
+}
+
+/* medias */
+
 @media screen and (max-width: 768px) {
   .grid1 {
     grid-template-columns: repeat(2, 1fr);

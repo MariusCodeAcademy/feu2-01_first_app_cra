@@ -39,6 +39,19 @@ function App() {
       </h1>
       {/* {houseGrid} */}
       <HouseGrid />
+
+      {/* <TeamItem /> */}
+      <div className='teamItem'>
+        <img src='/img/team2.jpg' alt='team member' />
+        <h3 className='team__title'>John Doe</h3>
+        <p className='team__ocupation'>CEO & Founder</p>
+        <p className='team_desc'>
+          Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+          elementum.
+        </p>
+        <button>Contact</button>
+      </div>
+
       <hr />
       <h2>House 2</h2>
       <img src='/img/house2.jpg' alt='second house' />
