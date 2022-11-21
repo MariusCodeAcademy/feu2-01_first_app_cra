@@ -40,7 +40,10 @@ function App() {
       {/* {houseGrid} */}
       <HouseGrid />
 
-      {/* <TeamItem /> */}
+      {/* <TeamItem1 /> */}
+      {/* <TeamItem2 /> */}
+      {/* <TeamItem3 /> */}
+      {/* <TeamItem4 /> */}
       <div className='teamItem'>
         <img src='/img/team2.jpg' alt='team member' />
         <h3 className='team__title'>John Doe</h3>
