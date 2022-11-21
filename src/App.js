@@ -8,6 +8,7 @@ const card1 = (
     <img className='card__img' src={house5} alt='namas penktas' />
   </div>
 );
+
 const card2 = (
   <div className='card'>
     <h4 className='card__title'>house 2</h4>
@@ -29,6 +30,36 @@ function HouseGrid() {
   );
 }
 
+function TeamItem1() {
+  return (
+    <div className='teamItem'>
+      <img src='/img/team2.jpg' alt='team member' />
+      <h3 className='team__title'>John Doe</h3>
+      <p className='team__ocupation'>CEO & Founder</p>
+      <p className='team_desc'>
+        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+        elementum.
+      </p>
+      <button>Contact</button>
+    </div>
+  );
+}
+
+function TeamItem2() {
+  return (
+    <div className='teamItem'>
+      <img src='/img/team1.jpg' alt='team member' />
+      <h3 className='team__title'>Jane Doe</h3>
+      <p className='team__ocupation'>Architect</p>
+      <p className='team_desc'>
+        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+        elementum.
+      </p>
+      <button>Contact</button>
+    </div>
+  );
+}
+
 function App() {
   const name = 'James';
 
@@ -40,24 +71,15 @@ function App() {
       {/* {houseGrid} */}
       <HouseGrid />
 
-      {/* <TeamItem1 /> */}
-      {/* <TeamItem2 /> */}
-      {/* <TeamItem3 /> */}
-      {/* <TeamItem4 /> */}
-      <div className='teamItem'>
-        <img src='/img/team2.jpg' alt='team member' />
-        <h3 className='team__title'>John Doe</h3>
-        <p className='team__ocupation'>CEO & Founder</p>
-        <p className='team_desc'>
-          Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-          elementum.
-        </p>
-        <button>Contact</button>
+      {/* <TeamGrid /> */}
+      <div className='grid1'>
+        <TeamItem1 />
+        <TeamItem2 />
+        <TeamItem1 />
+        <TeamItem2 />
       </div>
-
       <hr />
-      <h2>House 2</h2>
-      <img src='/img/house2.jpg' alt='second house' />
+      {/* contact form */}
     </div>
   );
 }
