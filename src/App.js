@@ -15,6 +15,20 @@ const card2 = (
   </div>
 );
 
+// react componentas
+function HouseGrid() {
+  return (
+    <div className='grid1'>
+      {card1}
+      {card2}
+      {card1}
+      {card2}
+      {card1}
+      {card2}
+    </div>
+  );
+}
+
 function App() {
   const name = 'James';
 
@@ -23,14 +37,8 @@ function App() {
       <h1 className='mainTitle'>
         Hello111 {name} !!! {150 * 45}
       </h1>
-
-      {card1}
-      {card2}
-      {card1}
-      {card2}
-      {card1}
-      {card2}
-
+      {/* {houseGrid} */}
+      <HouseGrid />
       <hr />
       <h2>House 2</h2>
       <img src='/img/house2.jpg' alt='second house' />
